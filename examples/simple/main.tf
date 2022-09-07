@@ -1,5 +1,5 @@
 module "dns" {
-  source  = "../"
+  source = "../"
 
   folder_id   = var.folder_id
   name        = var.name
