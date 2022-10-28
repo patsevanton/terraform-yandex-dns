@@ -37,15 +37,15 @@ module "dns" {
 
 ## Requirements
 
-| Name                                            | Version  |
-|-------------------------------------------------|----------|
-| [terraform](https://www.terraform.io/downloads) | >= 1.1.9 |
+| Name                                            | Version |
+|-------------------------------------------------|---------|
+| [terraform](https://www.terraform.io/downloads) | >= 1.2  |
 
 ## Providers
 
 | Name                                                                                    | Version |
 |-----------------------------------------------------------------------------------------|---------|
-| [yandex-cloud](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs) | >= 0.75 |
+| [yandex-cloud](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs) | >= 0.77 |
 
 ## Modules
 
