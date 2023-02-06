@@ -25,7 +25,7 @@ variable "labels" {
 }
 
 variable "public" {
-  default = true
+  default = false
   description = "The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources."
 }
 
