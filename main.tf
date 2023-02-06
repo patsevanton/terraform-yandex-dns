@@ -4,8 +4,8 @@ resource "yandex_dns_zone" "main" {
   description      = var.description
   zone             = var.zone
   labels           = var.labels
-  public           = false
-  private_networks = [var.private_network_id]
+  public           = var.public
+  private_networks = [var.public != true ? var.private_networks : null]
 }
 
 resource "yandex_dns_recordset" "main" {

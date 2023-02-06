@@ -24,9 +24,14 @@ variable "labels" {
   description = "A set of key/value label pairs to assign to the DNS zone"
 }
 
-variable "private_network_id" {
-  type        = string
-  description = "Private network ID"
+variable "public" {
+  default = true
+  description = "The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources."
+}
+
+variable "private_networks" {
+  default = ""
+  description = "For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from."
 }
 
 variable "recordset" {
