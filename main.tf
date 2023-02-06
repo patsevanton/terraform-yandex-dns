@@ -5,7 +5,7 @@ resource "yandex_dns_zone" "main" {
   zone             = var.zone
   labels           = var.labels
   public           = var.public
-  private_networks = [var.public != true ? var.private_networks : null]
+  private_networks = var.public != true ? var.private_networks : null
 }
 
 resource "yandex_dns_recordset" "main" {

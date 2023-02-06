@@ -30,7 +30,7 @@ variable "public" {
 }
 
 variable "private_networks" {
-  default = ""
+  default = []
   description = "For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from."
 }
 
