@@ -8,7 +8,7 @@ To create a DNS zone `my.local.` in Yandex.Cloud folder with id `xxx000xxx000xxx
 
 ```hcl
 module "dns" {
-  source  = "dtoch56/dns/yandex"
+  source = "github.com/patsevanton/terraform-yandex-dns.git//.?ref=v1.0.0"
 
   folder_id   = "xxx000xxx000xxx000xx"
 
@@ -45,7 +45,7 @@ module "dns" {
 
 | Name                                                                                    | Version |
 |-----------------------------------------------------------------------------------------|---------|
-| [yandex-cloud](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs) | >= 0.77 |
+| [yandex-cloud](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs) | >= 0.85 |
 
 ## Modules
 
